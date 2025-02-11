@@ -1,0 +1,11 @@
+{
+  "name": "kaisei",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "sass src/style.scss dist/style.css -w"
+  },
+  "dependencies": {
+    "sass": "^1.84.0"
+  }
+}
