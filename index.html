@@ -5,15 +5,149 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dist/reset.css">
     <link rel="stylesheet" href="dist/style.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+<title>豊穣米堂</title>
 </head>
-<body>
+<body class="body">
 
     <div class="container">
-        <section>
-            <div class="box"></div>
-        </section>
+
+        <header class="header">
+            <h1 class="header__title">
+                豊穣米堂
+            </h1>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a class="header__btn-blue" href="#section1">商品一覧</a></li>
+                    <li class="header__nav-item"><a class="header__btn-white" href="#section2">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+            <section class="hero">
+                <div class="splide" role="group" aria-label="Splideの基本的なHTML">
+                    <div class="splide__track">
+                          <ul class="splide__list">
+                              <li class="splide__slide">
+                                <div class="hero__content">
+                                    <h2 class="hero__title">
+                                        美味しさ<br><span class="hero__title--pt">一粒から広がる</span>
+                                    </h2>
+                                </div>
+                                <img src="assets/unsplash_zXNC_lBBVGE.png" alt="">
+                            </li>
+                              <li class="splide__slide">
+                                <div class="hero__content">
+                                    <h2 class="hero__title">
+                                        伝統の技<br><span class="hero__title--pt">農家のこだわり</span>
+                                    </h2>
+                                </div>
+                                <img src="assets/Frame 92.png" alt="">
+                            </li>
+                          </ul>
+                    </div>
+                  </div>
+                <!-- <div class="hero__img">
+                    <img src="pc版.png" alt="">
+                </div> -->
+            </section>
+
+            <section class="section philosophy">
+                <h2 class="section__title">豊穣米堂とは</h2>
+                <p class="philosophy__text">
+                    私たち○○は、厳選された素材と伝統的な技法を融合させ、現代のライフスタイルに合わせた商品を提供するブランドです。日本各地の豊かな自然の中で育まれた素材を使用し、
+                    <span class="philosophy__text--bold">「本物の品質」</span>を追求。心を込めて作られた商品をお届けします。お客様の日常に豊かさと癒しをもたらすことを目指し、<span class="philosophy__text--bold">シンプルでありながら洗練されたデザイン</span>を大切にしています。
+                </p>
+            </section>
+
+            <section class="section about">
+                <h2 class="section__title">豊穣米堂のこだわり</h2>
+                <div class="flex-container">
+                    <div class="flex-container__item">
+                        <div class="flex-container__img">
+                            <img src="assets/Frame 125.png" alt="">
+                        </div>
+                        <div class="flex-container__text">
+                            <h3 class="flex-container__title">厳選素材</h3>
+                            <p class="flex-container__desc">日本の大地で育まれた厳選素材を使用。各地の特色を活かし、品質にこだわったお米をお届けします。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-container">
+                    <div class="flex-container__item">
+                        <div class="flex-container__text">
+                            <h3 class="flex-container__title">伝統の技法</h3>
+                            <p class="flex-container__desc">職人が手間を惜しまず、一粒一粒丁寧に作り上げたお米。伝統の技法が生む、美味しさと風味をお楽しみください。</p>
+                        </div>
+                        <div class="flex-container__img">
+                            <img src="assets/Frame 124.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-container">
+                    <div class="flex-container__item">
+                        <div class="flex-container__img">
+                            <img src="assets/Frame 122.png" alt="">
+                        </div>
+                        <div class="flex-container__text">
+                            <h3 class="flex-container__title">持続可能性</h3>
+                            <p class="flex-container__desc">環境に配慮し、持続可能な農法で栽培。未来を見据えた製品作りを心掛けています。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section howto">
+                <h2 class="section__title">お米の炊き方</h2>
+                <div class="howto__img">
+                    <img src="assets/Frame 80.png" alt="">
+                </div>
+                <h3 class="section__subtitle">1.お米を丁寧に洗う</h3>
+                <p class="howto__text">お米を洗う際は、優しくかき混ぜることが重要です。水が濁るまでしっかりと洗い、水が透明になるまで繰り返します。洗い過ぎに注意。お米の表面に残るぬかが、旨味の素。</p>
+                <h3 class="section__subtitle">2.しっかり浸水させる</h3>
+                <p class="howto__text">お米を洗う際は、優しくかき混ぜることが重要です。水が濁るまでしっかりと洗い、水が透明になるまで繰り返します。洗い過ぎに注意。お米の表面に残るぬかが、旨味の素。</p>
+                <h3 class="section__subtitle">3.最適な火加減で炊き上げる</h3>
+                <p class="howto__text">お米を洗う際は、優しくかき混ぜることが重要です。水が濁るまでしっかりと洗い、水が透明になるまで繰り返します。洗い過ぎに注意。お米の表面に残るぬかが、旨味の素。</p>
+            </section>
+
+            <section class="section cta">
+                <p class="cta__text">
+                    <a class="cta__btn" href="product.html">商品を見る</a>
+                </p>
+                <div class="cta__content">
+                    <p class="cta__logo">豊穣米堂</p>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <ul class="footer__nav">
+                <li class="footer__nav-item"><a class="footer__nav-link" href="">ホーム</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="">商品一覧</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="">お問い合わせ</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="">プライバシーポリシー</a></li>
+            </ul>
+            <p class="footer__text">©︎2025 豊穣米堂</p>
+        </footer>
     </div>
     
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            new Splide('.splide', {
+                type       : 'fade',
+                rewind     : true,
+                autoplay   : true,
+                pauseOnHover: false,
+                arrows     : false,
+                interval  : 6000,
+            }).mount();
+        });
+    </script>
 </body>
 </html>
