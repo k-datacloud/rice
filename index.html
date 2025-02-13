@@ -21,8 +21,8 @@
             </h1>
             <nav class="header__nav">
                 <ul class="header__nav-list">
-                    <li class="header__nav-item"><a class="header__btn-blue" href="#section1">商品一覧</a></li>
-                    <li class="header__nav-item"><a class="header__btn-white" href="#section2">お問い合わせ</a></li>
+                    <li class="header__nav-item"><a class="header__btn-blue" href="product.html">商品一覧</a></li>
+                    <li class="header__nav-item"><a class="header__btn-white" href="#">お問い合わせ</a></li>
                 </ul>
             </nav>
         </header>
@@ -51,9 +51,6 @@
                           </ul>
                     </div>
                   </div>
-                <!-- <div class="hero__img">
-                    <img src="pc版.png" alt="">
-                </div> -->
             </section>
 
             <section class="section philosophy">
@@ -125,12 +122,18 @@
 
         </main>
 
+        <div class="fixed-button">
+            <a class="fixed-button__link" href="product.html">
+                炊きたていかが？
+            </a>
+        </div>
+
         <footer class="footer">
             <ul class="footer__nav">
-                <li class="footer__nav-item"><a class="footer__nav-link" href="">ホーム</a></li>
-                <li class="footer__nav-item"><a class="footer__nav-link" href="">商品一覧</a></li>
-                <li class="footer__nav-item"><a class="footer__nav-link" href="">お問い合わせ</a></li>
-                <li class="footer__nav-item"><a class="footer__nav-link" href="">プライバシーポリシー</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#">ホーム</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="product.html">商品一覧</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#">お問い合わせ</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#">プライバシーポリシー</a></li>
             </ul>
             <p class="footer__text">©︎2025 豊穣米堂</p>
         </footer>
@@ -139,15 +142,16 @@
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            new Splide('.splide', {
-                type       : 'fade',
-                rewind     : true,
-                autoplay   : true,
-                pauseOnHover: false,
-                arrows     : false,
-                interval  : 6000,
-            }).mount();
-        });
+        new Splide('.splide', {
+            type       : 'fade',
+            rewind     : true,
+            autoplay   : true,
+            pauseOnHover: false,
+            arrows     : false,
+            interval  : 6000,
+        }).mount();
+    });
     </script>
+    <script src="main.js"></script>
 </body>
 </html>

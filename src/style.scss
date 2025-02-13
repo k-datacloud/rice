@@ -1,7 +1,8 @@
 @charset "utf-8";
 
 $breakpoints: (
-    "large": 768px,
+    "medium": 600px,
+    "large": 768px
 );
 
 @mixin respond-to($breakpoint) {
@@ -42,6 +43,7 @@ body {
     padding: 0 20px;
 
     @include respond-to("large") {
+        padding: 0 80px;
         margin-bottom: 80px;
     }
 
@@ -80,6 +82,7 @@ body {
 
         @include respond-to("large") {
             @include serif(24px, 500);
+            padding-left: 40px;
         }
     }
 
@@ -121,7 +124,7 @@ body {
             color: #51616b;
 
             @include respond-to("large") {
-                width: 120px;
+                width: 130px;
                 @include serif(16px, 400);
                 height: 60px;
             }
@@ -144,6 +147,10 @@ body {
     width: 100%;
     margin-bottom: 40px;
     position: relative;
+
+    @include respond-to("large") {
+        margin-bottom: 80px;
+    }
 
     &__img {
 
@@ -218,11 +225,15 @@ body {
 
         &__item {
             width: 100%;
-            padding: 0 6vw;
+            padding: 0 20px;
             display: flex;
             flex-direction: row-reverse;
             align-items: center;
             gap: 24px;
+
+            @include respond-to("large") {
+                padding: 0 40px;
+            }
         }
 
         &__img {
@@ -327,16 +338,52 @@ body {
     }
 }
 
+.fixed-button {
+    display: none;
+
+    @include respond-to("large") {
+        position: fixed;
+        bottom: 100px;
+        right: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #333333;
+        padding: 16px 20px;
+        opacity: 0;
+        transition: all 1s ease-in-out;
+    }
+
+    &__link {
+        @include serif(20px, 400);
+        color: #ffffff;
+        writing-mode: vertical-rl;
+    }
+}
+
+.btn-active {
+    opacity: 1;
+    transition: all 2s ease-in-out;
+}
+
 .footer {
     width: 100%;
     padding: 20px;
     background-color: #51616b;
+
+    @include respond-to("large") {
+        padding: 40px;
+    }
 
     &__nav {
         display: flex;
         flex-direction: column;
         gap: 24px;
         padding: 30px 0;
+
+        @include respond-to("large") {
+            gap: 40px;
+        }
     
 
         &-link {
@@ -380,7 +427,7 @@ body {
             color: #ffffff;
 
             @include respond-to("large") {
-                width: 130px;
+                width: 140px;
                 height: 60px;
                 @include serif(16px, 400);
                 color: #ffffff;
