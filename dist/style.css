@@ -219,6 +219,7 @@ body {
   line-height: 250%;
   letter-spacing: 1px;
   text-align: justify;
+  opacity: 0;
 }
 @media (min-width: 768px) {
   .philosophy__text {
@@ -238,11 +239,16 @@ body {
   color: #51616b;
   letter-spacing: 1.6px;
 }
+.philosophy .text-active {
+  opacity: 1;
+  transition: all 1s ease-in-out;
+}
 
 .about .flex-container {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+  opacity: 0;
 }
 @media (min-width: 768px) {
   .about .flex-container {
@@ -319,6 +325,10 @@ body {
     color: #51616b;
     letter-spacing: 1.8px;
   }
+}
+.about .flex-container-active {
+  opacity: 1;
+  transition: all 1s ease-in-out;
 }
 
 .howto__img {
