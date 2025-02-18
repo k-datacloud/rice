@@ -1,8 +1,6 @@
 
 const fixedBtn = document.querySelector('.fixed-button');
 const scrollY = window.scrollY;
-console.log(fixedBtn);
-
 
 window.addEventListener('scroll', () => {
 
@@ -36,8 +34,6 @@ window.addEventListener('scroll', () => {
         flexContainers.forEach(flexContainer => {
             let position = flexContainer.getBoundingClientRect().top;
             const windowHeight = window.innerHeight;
-            console.log(position);
-            console.log(windowHeight);
             
             
             if ((position < windowHeight - 200)) {
