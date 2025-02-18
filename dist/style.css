@@ -167,8 +167,13 @@ body {
     margin-bottom: 80px;
   }
 }
-.hero__img img {
+.hero .splide__slide img {
   width: 100%;
+  max-width: 100%;
+}
+.hero .splide__slide .is-active {
+  opacity: 1;
+  transition: all 1s ease-in-out;
 }
 .hero__content {
   position: absolute;
@@ -634,13 +639,6 @@ body {
     color: #51616b;
     letter-spacing: 1.8px;
   }
-}
-
-.splide__slide {
-  transition: transform 6s ease-in-out;
-}
-.splide__slide img {
-  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

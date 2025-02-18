@@ -152,10 +152,19 @@ body {
         margin-bottom: 80px;
     }
 
-    &__img {
+    .splide {
+            
+        &__slide {
+    
+            img {
+                width: 100%;
+                max-width: 100%;
+            }
 
-        img {
-            width: 100%;
+            .is-active {
+                opacity: 1;
+                transition: all 1s ease-in-out;
+            }
         }
     }
 
@@ -523,23 +532,5 @@ body {
                 @include serif(18px, 400);
             }
         }
-    }
-}
-
-
-//splide 
-
-.splide {
-
-    &__slide {
-        transition: transform 6s ease-in-out;
-
-        img {
-            width: 100%;
-        }
-
-        // &.is-active {
-        //     transform: scale(1.1);
-        // }
     }
 }
