@@ -441,7 +441,7 @@ body {
 
 .footer {
   width: 100%;
-  padding: 20px;
+  padding: 20px 20px 40px;
   background-color: #51616b;
 }
 @media (min-width: 768px) {
@@ -641,9 +641,6 @@ body {
 }
 .splide__slide img {
   width: 100%;
-}
-.splide__slide.is-active {
-  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=style.css.map */
