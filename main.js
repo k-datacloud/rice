@@ -21,20 +21,17 @@ window.addEventListener('scroll', () => {
 });
 
 const paragraphText = document.querySelector('.philosophy__text');
+const windowHeight = window.innerHeight;
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 200) {
+    if ( window.scrollY < windowHeight - 200) {
         paragraphText.classList.add('text-active');
-    } else {
-        paragraphText.classList.remove('text-active');
-    }
+    } 
 })
 
 const flexContainers = document.querySelectorAll('.flex-container');
 window.addEventListener('scroll', () => {
         flexContainers.forEach(flexContainer => {
             let position = flexContainer.getBoundingClientRect().top;
-            const windowHeight = window.innerHeight;
-            
             
             if ((position < windowHeight - 200)) {
                 flexContainer.classList.add('flex-container-active');

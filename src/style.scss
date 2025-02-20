@@ -159,6 +159,7 @@ body {
             img {
                 width: 100%;
                 max-width: 100%;
+                height: auto;
             }
 
             .is-active {
@@ -168,23 +169,16 @@ body {
         }
     }
 
-    &__img {
-        
-        img {
-            width: 100%;
-            max-width: 100%;
-        }
-    }
-
     &__content {
         position: absolute;
+        writing-mode: vertical-rl;
         top: 40px;
         right: 40px;
+        z-index: 1;
     }
 
     &__title {
         @include serif(22px, 400);
-        writing-mode: vertical-rl;
         line-height: 150%;
         letter-spacing: 3px;
         color: #ffffff;
@@ -196,8 +190,8 @@ body {
         }
 
         &--pt {
-            padding-top: 20px;
             color: #ffffff;
+            padding-top: 20px;
 
             @include respond-to("large") {
                 padding-top: 40px;
