@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon4.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="dist/reset.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <link rel="stylesheet" href="dist/style.css">
@@ -30,7 +30,16 @@
 
         <main class="main">
             <section class="hero">
-                <div class="splide" role="group" aria-label="Splideの基本的なHTML">
+
+                <div class="hero__content">
+                    <h2 class="hero__title">
+                        美味しさ<br><span class="hero__title--pt">一粒から広がる</span>
+                    </h2>
+                </div>
+                <div class="hero__img">
+                    <img src="assets/unsplash_zXNC_lBBVGE.png" alt="">
+                </div>
+                <!-- <div class="splide" role="group" aria-label="Splideの基本的なHTML">
                     <div class="splide__track">
                           <ul class="splide__list">
                               <li class="splide__slide">
@@ -51,7 +60,7 @@
                             </li>
                           </ul>
                     </div>
-                  </div>
+                  </div> -->
             </section>
 
             <section class="section philosophy">
@@ -140,7 +149,7 @@
         </footer>
     </div>
     
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
         new Splide('.splide', {
@@ -152,7 +161,7 @@
             interval  : 6000,
         }).mount();
     });
-    </script>
+    </script> -->
     <script src="main.js"></script>
 </body>
 </html>

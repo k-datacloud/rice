@@ -175,6 +175,10 @@ body {
   opacity: 1;
   transition: all 1s ease-in-out;
 }
+.hero__img img {
+  width: 100%;
+  max-width: 100%;
+}
 .hero__content {
   position: absolute;
   top: 40px;

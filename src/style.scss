@@ -168,6 +168,14 @@ body {
         }
     }
 
+    &__img {
+        
+        img {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+
     &__content {
         position: absolute;
         top: 40px;
