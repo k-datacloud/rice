@@ -38,3 +38,34 @@ window.addEventListener('scroll', () => {
             }
         })
 })
+
+
+const openingAnimation = () => {
+    const loader = document.querySelector('.loader');
+    const loaderText = document.querySelector('.loader__text');
+    const loaderLetters = loaderText.textContent.split('');
+    const newloaderText = loaderLetters.map((loaderletter) => {
+        return `<span class='loader__letter'>${loaderletter}</span>`;
+    })
+    loaderText.innerHTML = newloaderText.join('');
+    const loaderLetters2 = document.querySelectorAll('.loader__letter');
+    loaderLetters2.forEach((loaderLetter2, index) => {
+        loaderLetter2.style.animationDelay = `${index * 0.8}s`;
+        setTimeout(() => {
+            loader.classList.add('loader-showoff');
+        }, 5000);
+    })
+}
+
+window.addEventListener('load', () => {
+    openingAnimation();
+})
+
+console.log("<span class='loader__text'>豊穣米堂</span>");
+
+let bodyparts = ["頭", "胸",]
+let newbody = bodyparts.map((bodypart) => {
+    return bodypart + "wao";
+})
+
+console.log(newbody);
