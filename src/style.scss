@@ -257,13 +257,18 @@ body {
         letter-spacing: 1px;
         text-align: justify;
         opacity: 0;
+        margin-bottom: 32px;
 
         @include respond-to("large") {
             @include serif(18px, 400);
         }
 
         &--bold {
-            @include serif(16px, 500);
+            @include serif(16px, 600);
+        }
+
+        &:last-child {
+            margin-bottom: 0;
         }
     }
 
@@ -377,13 +382,12 @@ body {
 }
 
 .cta {
+    margin-bottom: 196px;
 
     &__text {
         display: flex;
         justify-content: center;
-        margin-bottom: 40px;
-
-
+        margin-bottom: 64px;
     }
 
     &__btn {
@@ -410,11 +414,10 @@ body {
     }
 
     &__logo {
-        @include serif(30px, 500);
         text-align: center;
 
-        @include respond-to("large") {
-            @include serif(36px, 500);
+        img {
+            width: auto;
         }
     }
 }
@@ -431,7 +434,12 @@ body {
         align-items: center;
         background-color: #333333;
         opacity: 0;
-        transition: opacity 1s ease-in-out;
+        transition: opacity .5s ease-in-out;
+
+        &:hover {
+            opacity: .8;
+            transition: opacity .5s ease-in-out;
+        }
     }
 
     &__link {
@@ -449,7 +457,7 @@ body {
 
 .footer {
     width: 100%;
-    padding: 20px 20px 40px;
+    padding: 40px 20px;
     background-color: #51616b;
 
     @include respond-to("large") {
@@ -460,7 +468,7 @@ body {
         display: flex;
         flex-direction: column;
         gap: 24px;
-        padding: 30px 0;
+        margin-bottom: 96px;
 
         @include respond-to("large") {
             gap: 40px;

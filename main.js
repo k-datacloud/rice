@@ -20,11 +20,13 @@ window.addEventListener('scroll', () => {
 
 });
 
-const paragraphText = document.querySelector('.philosophy__text');
+const paragraphTexts = document.querySelectorAll('.philosophy__text');
 const windowHeight = window.innerHeight;
 window.addEventListener('scroll', () => {
     if ( window.scrollY < windowHeight - 200) {
-        paragraphText.classList.add('text-active');
+        paragraphTexts.forEach( paragraphText => {
+            paragraphText.classList.add('text-active')
+        })
     } 
 })
 

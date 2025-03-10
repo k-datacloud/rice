@@ -273,6 +273,7 @@ body {
   letter-spacing: 1px;
   text-align: justify;
   opacity: 0;
+  margin-bottom: 32px;
 }
 @media (min-width: 768px) {
   .philosophy__text {
@@ -288,9 +289,12 @@ body {
   font-family: "Noto Serif JP", serif;
   font-optical-sizing: auto;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   color: #51616b;
   letter-spacing: 1.6px;
+}
+.philosophy__text:last-child {
+  margin-bottom: 0;
 }
 .philosophy .text-active {
   opacity: 1;
@@ -405,10 +409,13 @@ body {
   margin-bottom: 0;
 }
 
+.cta {
+  margin-bottom: 196px;
+}
 .cta__text {
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 64px;
 }
 .cta__btn {
   display: flex;
@@ -444,23 +451,10 @@ body {
   opacity: 0.8;
 }
 .cta__logo {
-  font-family: "Noto Serif JP", serif;
-  font-optical-sizing: auto;
-  font-size: 30px;
-  font-weight: 500;
-  color: #51616b;
-  letter-spacing: 3px;
   text-align: center;
 }
-@media (min-width: 768px) {
-  .cta__logo {
-    font-family: "Noto Serif JP", serif;
-    font-optical-sizing: auto;
-    font-size: 36px;
-    font-weight: 500;
-    color: #51616b;
-    letter-spacing: 3.6px;
-  }
+.cta__logo img {
+  width: auto;
 }
 
 .fixed-button {
@@ -476,7 +470,11 @@ body {
     align-items: center;
     background-color: #333333;
     opacity: 0;
-    transition: opacity 1s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .fixed-button:hover {
+    opacity: 0.8;
+    transition: opacity 0.5s ease-in-out;
   }
 }
 .fixed-button__link {
@@ -498,7 +496,7 @@ body {
 
 .footer {
   width: 100%;
-  padding: 20px 20px 40px;
+  padding: 40px 20px;
   background-color: #51616b;
 }
 @media (min-width: 768px) {
@@ -510,7 +508,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  padding: 30px 0;
+  margin-bottom: 96px;
 }
 @media (min-width: 768px) {
   .footer__nav {
