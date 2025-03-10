@@ -88,12 +88,11 @@ body {
 
 .section {
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 160px;
     padding: 0 20px;
 
     @include respond-to("large") {
         padding: 0 80px;
-        margin-bottom: 80px;
     }
 
     &__title {
@@ -109,7 +108,7 @@ body {
 
     &__subtitle {
         @include serif(22px, 500);
-        margin-bottom: 20px;
+        margin-bottom: 32px;
 
         @include respond-to("large") {
             @include serif(24px, 500);
@@ -194,12 +193,8 @@ body {
 
 .hero {
     width: 100%;
-    margin-bottom: 40px;
     position: relative;
-
-    @include respond-to("large") {
-        margin-bottom: 80px;
-    }
+    padding: 0;
 
     .splide {
             
@@ -252,6 +247,10 @@ body {
 
 .philosophy {
 
+    &__title {
+        margin-bottom: 48px;
+    }
+
     &__text {
         @include serif(16px, 400);
         line-height: 250%;
@@ -276,14 +275,18 @@ body {
 
 .about {
 
+    &__title {
+        margin-bottom: 96px;
+    }
+
     .flex-container {
         display: flex;
         flex-direction: column;
-        margin-bottom: 20px;
+        margin-bottom: 64px;
         opacity: 0;
 
         @include respond-to("large") {
-            margin-bottom: 40px;
+            // margin-bottom: px;
         }
 
         &:last-child {
@@ -300,6 +303,7 @@ body {
 
             @include respond-to("large") {
                 padding: 0 40px;
+                gap: 48px;
             }
         }
 
@@ -352,7 +356,7 @@ body {
 .howto {
 
     &__img {
-        margin-bottom: 20px;
+        margin-bottom: 64px;
         
         img {
             width: 100%;
@@ -364,7 +368,7 @@ body {
         line-height: 220%;
         letter-spacing: 1px;
         text-align: justify;
-        margin-bottom: 20px;
+        margin-bottom: 64px;
 
         &:last-child {
             margin-bottom: 0;
@@ -489,7 +493,7 @@ body {
 //product.scss
 
 .product-header {
-    margin-bottom: 100px;
+    margin-bottom: 128px;
     
     &__btn {
 
@@ -534,19 +538,21 @@ body {
     max-width: 500px;
     margin: 0 auto 40px; 
 
+    &__title {
+        @include serif(24px, 500);
+        margin-bottom: 48px;
+    }
+
     .flex-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin-bottom: 20px;
+        margin-bottom: 128px;
 
-        &:last-child {
-            margin-bottom: 0;
-        }
 
-        @include respond-to("large") {
-            margin-bottom: 40px;
-        }
+        // @include respond-to("large") {
+        //     margin-bottom: 40px;
+        // }
 
         &__item {
             width: 48%;

@@ -59,13 +59,12 @@ body {
 }
 .section {
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 160px;
   padding: 0 20px;
 }
 @media (min-width: 768px) {
   .section {
     padding: 0 80px;
-    margin-bottom: 80px;
   }
 }
 .section__title {
@@ -96,7 +95,7 @@ body {
   font-weight: 500;
   color: #51616b;
   letter-spacing: 2.2px;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
 }
 @media (min-width: 768px) {
   .section__subtitle {
@@ -208,13 +207,8 @@ body {
 
 .hero {
   width: 100%;
-  margin-bottom: 40px;
   position: relative;
-}
-@media (min-width: 768px) {
-  .hero {
-    margin-bottom: 80px;
-  }
+  padding: 0;
 }
 .hero .splide__slide img {
   width: 100%;
@@ -265,6 +259,9 @@ body {
   }
 }
 
+.philosophy__title {
+  margin-bottom: 48px;
+}
 .philosophy__text {
   font-family: "Noto Serif JP", serif;
   font-optical-sizing: auto;
@@ -300,16 +297,14 @@ body {
   transition: all 1s ease-in-out;
 }
 
+.about__title {
+  margin-bottom: 96px;
+}
 .about .flex-container {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  margin-bottom: 64px;
   opacity: 0;
-}
-@media (min-width: 768px) {
-  .about .flex-container {
-    margin-bottom: 40px;
-  }
 }
 .about .flex-container:last-child {
   margin-bottom: 0;
@@ -325,6 +320,7 @@ body {
 @media (min-width: 768px) {
   .about .flex-container__item {
     padding: 0 40px;
+    gap: 48px;
   }
 }
 .about .flex-container__img img {
@@ -388,7 +384,7 @@ body {
 }
 
 .howto__img {
-  margin-bottom: 20px;
+  margin-bottom: 64px;
 }
 .howto__img img {
   width: 100%;
@@ -403,7 +399,7 @@ body {
   line-height: 220%;
   letter-spacing: 1px;
   text-align: justify;
-  margin-bottom: 20px;
+  margin-bottom: 64px;
 }
 .howto__text:last-child {
   margin-bottom: 0;
@@ -564,7 +560,7 @@ body {
 }
 
 .product-header {
-  margin-bottom: 100px;
+  margin-bottom: 128px;
 }
 .product-header__btn-blue {
   display: flex;
@@ -626,19 +622,20 @@ body {
   max-width: 500px;
   margin: 0 auto 40px;
 }
+.product__title {
+  font-family: "Noto Serif JP", serif;
+  font-optical-sizing: auto;
+  font-size: 24px;
+  font-weight: 500;
+  color: #51616b;
+  letter-spacing: 2.4px;
+  margin-bottom: 48px;
+}
 .product .flex-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 20px;
-}
-.product .flex-container:last-child {
-  margin-bottom: 0;
-}
-@media (min-width: 768px) {
-  .product .flex-container {
-    margin-bottom: 40px;
-  }
+  margin-bottom: 128px;
 }
 .product .flex-container__item {
   width: 48%;
