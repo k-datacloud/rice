@@ -12,20 +12,31 @@
 </head>
 
 <body>
+
     <div class="container">
 
-        <header class="header product-header">
-            <h1 class="header__title">豊穣米堂</h1>
-            <nav class="header__nav">
-                <ul class="header__nav-list">
-                    <li class="header__nav-item"><a class="product-header__btn-white" href="index.html">ホーム</a></li>
-                    <li class="header__nav-item"><a class="product-header__btn-blue" href="#">お問い合わせ</a></li>
-                </ul>
-            </nav>
+        <header class="header">
+            <div class="header__wrapper">
+                <h1 class="header__logo">
+                    <img src="assets/header-logo.svg" alt="ヘッダーロゴ">
+                </h1>
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item"><a class="header__btn-blue" href="product.html">商品一覧</a></li>
+                        <li class="header__nav-item"><a class="header__btn-white" href="#">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+                <div class="hamburger">
+                    <div class="hamburger__img">
+                        <img src="assets/Frame 284.svg" alt="ハンバーガーメニューのアイコン">
+                    </div>
+                </div>    
+            </div>
         </header>
 
         <section class="section product">
-            <h2 class="section__title product__title">商品一覧</h2>
+            <div class="product__wrapper">
+                <h2 class="section__title product__title">商品一覧</h2>
             <h3 class="section__subtitle">お米</h3>
             <div class="flex-container">
                 <div class="flex-container__item">
@@ -90,6 +101,7 @@
                     <p class="flex-container__title">お箸</p>
                     <p class="flex-container__desc">1200円</p>
                 </div>
+            </div>
             </div>
         </section>
 

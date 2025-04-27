@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon">
+    <link rel="icon" href="assets/icon.ico" sizes="any" type="image/x-icon">
     <link rel="stylesheet" href="dist/reset.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <link rel="stylesheet" href="dist/style.css">
@@ -14,57 +14,68 @@
 </head>
 <body class="body">
 
-    <div class="loader">
+    <!-- <div class="loader">
         <p class="loader__text">豊穣米堂</p>
-    </div>
+    </div> -->
 
     <div class="container">
 
         <header class="header">
-            <h1 class="header__title">
-                豊穣米堂
-            </h1>
-            <nav class="header__nav">
-                <ul class="header__nav-list">
-                    <li class="header__nav-item"><a class="header__btn-blue" href="product.html">商品一覧</a></li>
-                    <li class="header__nav-item"><a class="header__btn-white" href="#">お問い合わせ</a></li>
-                </ul>
-            </nav>
+            <div class="header__wrapper">
+                <h1 class="header__logo">
+                    <img src="assets/header-logo.svg" alt="ヘッダーロゴ">
+                </h1>
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item"><a class="header__btn-blue" href="product.html">商品一覧</a></li>
+                        <li class="header__nav-item"><a class="header__btn-white" href="#">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+                <div class="hamburger">
+                    <div class="hamburger__img">
+                        <img src="assets/hamburger.svg" alt="ハンバーガーメニューのアイコン">
+                    </div>
+                </div>    
+            </div>
         </header>
 
         <main class="main">
 
             <section class="section hero">
-                <div class="splide" role="group" aria-label="Splideの基本的なHTML">
-                    <div class="splide__track">
-                          <ul class="splide__list">
-                              <li class="splide__slide">
-                                <div class="hero__content">
-                                    <h2 class="hero__title">
-                                        美味しさ<br><span class="hero__title--pt">一粒から広がる</span>
-                                    </h2>
-                                </div>
-                                <img src="assets/unsplash_zXNC_lBBVGE.png" alt="">
-                            </li>
-                              <li class="splide__slide">
-                                <div class="hero__content">
-                                    <h2 class="hero__title">
-                                        伝統の技<br><span class="hero__title--pt">農家のこだわり</span>
-                                    </h2>
-                                </div>
-                                <img src="assets/Frame 92.png" alt="">
-                            </li>
-                          </ul>
+                <div class="hero__wrapper">
+                    <div class="splide" role="group" aria-label="Splideの基本的なHTML">
+                        <div class="splide__track">
+                              <ul class="splide__list">
+                                  <li class="splide__slide">
+                                    <div class="hero__content">
+                                        <h2 class="hero__title">
+                                            美味しさ<br><span class="hero__title--pt">一粒から広がる</span>
+                                        </h2>
+                                    </div>
+                                    <img src="assets/mainvisual.png" alt="メインビジュアル">
+                                </li>
+                                  <li class="splide__slide">
+                                    <div class="hero__content">
+                                        <h2 class="hero__title">
+                                            伝統の技<br><span class="hero__title--pt">農家のこだわり</span>
+                                        </h2>
+                                    </div>
+                                    <img src="assets/mainvisual 02.png" alt="メインビジュアル">
+                                </li>
+                              </ul>
+                        </div>
                     </div>
-                  </div>
+                </div>
             </section>
 
             <section class="section philosophy">
-                <h2 class="section__title philosophy__title">豊穣米堂とは</h2>
-                <p class="philosophy__text fade-up-text">
-                    豊穣米堂は、お米をとおして、日々の暮らしにやさしさと小さなよろこびを届けるお店です。</p>
-                <p class="philosophy__text fade-up-text">自然の中でていねいに育てたお米を、その風味や佇まいを大切にしながら、毎日の食卓に少しの楽しみを加えます。</p> 
-                <p class="philosophy__text fade-up-text"><span class="philosophy__text--bold">ささやかでも、手にとるたびに心がほどけるようなものを。</span>そんな思いを込めて、ひとつひとつ、静かにかたちにしています。</p>   
+                <div class="philosophy__wrapper">
+                    <h2 class="section__title philosophy__title">豊穣米堂とは</h2>
+                    <p class="philosophy__text fade-up-text">
+                        豊穣米堂は、お米をとおして、日々の暮らしにやさしさと小さなよろこびを届けるお店です。</p>
+                    <p class="philosophy__text fade-up-text">自然の中でていねいに育てたお米を、その風味や佇まいを大切にしながら、毎日の食卓に少しの楽しみを加えます。</p> 
+                    <p class="philosophy__text fade-up-text"><span class="philosophy__text--bold">ささやかでも、手にとるたびに心がほどけるようなものを。</span>そんな思いを込めて、ひとつひとつ、静かにかたちにしています。</p>   
+                </div>
             </section>
 
             <section class="section about">
@@ -105,7 +116,8 @@
             </section>
 
             <section class="section howto">
-                <h2 class="section__title howto__title">お米の炊き方</h2>
+                <div class="howto__wrapper">
+                    <h2 class="section__title howto__title">お米の炊き方</h2>
                 <div class="howto__img">
                     <img src="assets/Frame 80.png" alt="">
                 </div>
@@ -115,6 +127,7 @@
                 <p class="howto__text">お米を洗う際は、優しくかき混ぜることが重要です。水が濁るまでしっかりと洗い、水が透明になるまで繰り返します。洗い過ぎに注意。お米の表面に残るぬかが、旨味の素。</p>
                 <h3 class="section__subtitle">3.最適な火加減で炊き上げる</h3>
                 <p class="howto__text">お米を洗う際は、優しくかき混ぜることが重要です。水が濁るまでしっかりと洗い、水が透明になるまで繰り返します。洗い過ぎに注意。お米の表面に残るぬかが、旨味の素。</p>
+                </div>
             </section>
 
             <section class="section cta">
@@ -156,7 +169,7 @@
             autoplay   : true,
             pauseOnHover: false,
             arrows     : false,
-            interval  : 4000,
+            interval  : 8000,
         }).mount();
     });
     </script>
